@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>minesweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()" oncontextmenu="return false;">
+
+    <div class="text-title">Mine Sweeper</div>
+
+    <div class="play-again"> 🖣 Play Again 🖣 </div>
+
+    <div class="levels">
+        <button class="myButton" onclick="buildBoard(4,2)">Beginner</button>
+        <button class="myButton" onclick="buildBoard(6,5)">Medium</button>
+        <button class="myButton" onclick="buildBoard(8,8)">Expert</button>
+    </div>
+
+    <p class="text-title levels">Select a difficulty level</p>
+
+    <div class="time-and-score">
+            <label>Timer :  </label><label class="minutes">00</label>:<label class="seconds">00</label><label class="smiley"></label>
+            <label class="record"> Best Record : </label>
+            <label class="marked-flags"> Marked Flags : </label>  
+    </div>
+
+    <div class="board"></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Game Over</h2>
+            </div>
+            <div class="modal-body">
+                <p id="alertText"></p>
+            </div>
+        </div>
+
+
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

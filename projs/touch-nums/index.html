@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>touch-nums</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/heart.PNG">
+
+
+</head>
+
+<body>
+    <div class="text-title">Touch-Numbers</div>
+    <div id="difficulty-Levels" class="text-title">
+        <span>Select difficulty:</span>
+        <button class="myButton" onclick="onLevelClick(this)">16</button>
+        <button class="myButton" onclick="onLevelClick(this)">25</button>
+        <button class="myButton" onclick="onLevelClick(this)">36</button>
+        <button class="myButton" onclick="onLevelClick(this)">49</button>
+        <button class="myButton" onclick="onLevelClick(this)">64</button>
+        <button class="myButton" onclick="onLevelClick(this)">81</button>
+        <button class="myButton" onclick="onLevelClick(this)">100</button>
+    </div>
+    <div class="text-title">
+        <div>
+            <span>time:</span>
+            <span class="timer">
+            </span>
+        </div>
+        <div>
+            <span>next number:</span>
+            <span id="next-num"></span>
+        </div>
+    </div>
+
+    <div id="board" class="board">
+    </div>
+    <br>
+    <div>
+        <button class="myButton play-again" onClick="clearGame()">Play Again</button>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Good Work!</h2>
+            </div>
+            <div class="modal-body">
+                <p id="alertText"></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<script src=js/main.js></script>
+
+</html>

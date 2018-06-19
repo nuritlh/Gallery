@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Book-Shop</title>
+</head>
+
+<body>
+
+    <h1>welcome to my bookshop</h1>
+    <button type="button" class="btn btn-info btn-sm" onclick="readAndAddNewBook()">+ Add New Book</button>
+
+    <div class="table-responsive-sm">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" class="table-header" onclick="onSetSort('ID')">ID</th>
+                    <th scope="col" class="table-header" onclick="onSetSort('Book Name')">Book Name</th>
+                    <th scope="col" class="table-header" onclick="onSetSort('Price')">Price</th>
+                    <th scope="col" class="table-header" onclick="onSetSort('Rate')">Rate</th>
+                    <th scope="col">Photo</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="books-contant">
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <button type="button" class="btn btn-secondary">3</button>
+            <button type="button" class="btn btn-secondary">4</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-img"></div>
+                        <div class="modal-body-details">
+                            <div class="modal-body-price"></div>
+                            <div class="modal-body-rate"></div>
+                            <div>
+                                <span class="btn-rate" onclick="onRateCliked(1)">🖒</span>
+                                <span class="btn-rate" onclick="onRateCliked(-1)">🖓</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/utils-service.js"></script>
+        <script src="js/book-service.js"></script>
+        <script src="lib/jquery-3.3.1.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.js"></script>
+        <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

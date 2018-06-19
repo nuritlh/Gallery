@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/cal-icon.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="5" class="res"></td>
+            </tr>
+            <tr>
+                <td onclick="setOp('MC')">MC</td>
+                <td onclick="setOp('MR')">MR</td>
+                <td onclick="setOp('MS')">MS</td>
+                <td onclick="setOp('M+')">M+</td>
+                <td onclick="setOp('M-')">M-</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-long-arrow-left" style="font-size:24px"></i></td>
+                <td>CE</td>
+                <td onclick="setOp('C')">C</td>
+                <td>&#8723;</td>
+                <td onclick="setOp('sqrt')">&#8730;</td>
+            </tr>
+            <tr>
+                <td onclick="addDigit(7)">7</td>
+                <td onclick="addDigit(8)">8</td>
+                <td onclick="addDigit(9)">9</td>
+                <td onclick="setOp('/')">/</td>
+                <td>%</td>
+            </tr>
+            <tr>
+                <td onclick="addDigit(4)">4</td>
+                <td onclick="addDigit(5)">5</td>
+                <td onclick="addDigit(6)">6</td>
+                <td onclick="setOp('*')" >*</td>
+                <td>1/&#10008;</td>
+            </tr>
+            <tr>
+                <td onclick="addDigit(1)">1</td>
+                <td onclick="addDigit(2)">2</td>
+                <td onclick="addDigit(3)">3</td>
+                <td onclick="setOp('-')">-</td>
+                <td onclick="setOp('=')" rowspan="2">=</td>
+            </tr>
+            <tr>
+                <td onclick="addDigit(0)" colspan="2">0</td>
+                <td>.</td>
+                <td onclick="setOp('+')">+</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

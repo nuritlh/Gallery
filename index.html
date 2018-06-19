@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Nurit Levi - Protfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/ca-gallery.css" rel="stylesheet">
+  <link rel="icon" href="img/logos/buttercup-icon.png">
+
+</head>
+
+<body id="page-top">
+  <div class="offcanvas-btn" onClick="openCanvas()">
+    <i class="fa fa-comment" aria-hidden="true"></i>
+  </div>
+  <aside class="offcanvas-aside">
+
+    <!-- Contact -->
+    <section id="contact">
+      <h3>Contact Me</h3>
+      </br>
+
+      <form>
+        <div class="form-group">
+          <h5 for="exampleInputEmail1">and send me your thoughts</h5>
+          <input type="email" class="form-control" id="subject-mail" aria-describedby="emailHelp" placeholder="subject">
+          <textarea class="form-control contact-me-body" id="mail-massage-body" rows="3" placeholder="write here"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="onFormContactClicked(event)">Submit</button>
+      </form>
+    </section>
+
+
+
+
+  </aside>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" onclick="openCanvas()">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To my Portfolio</div>
+        <div class="intro-heading">It's Nice To Meet You</div>
+        <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="bg-light" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Specialities</h2>
+          <h3 class="section-subheading text-muted">That's me in a nutshell..</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Project Manager</h4>
+          <p class="text-muted">Project manager,team leader, Business Analyst with 3 years of experience in a sensitive and complex corporate environment.
+            Outgoing and detail-oriented, I am proficient at building and maintaining professional relationships. Have a
+            degree in Industrial Engineering, Major in Information Systems.
+
+          </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Full-Stack development</h4>
+          <p class="text-muted">Capable of performing tasks at any level of the technical stack in which I reside. It means: Understanding, creating,
+            manipulating, and querying databases. API / back-end code in one or more languages, e.g. Ruby, Java, Python,
+            etc. Front-end code in HTML, JavaScript, C#, SQL. Project management / client work, e.g. gathering requirements,
+            creating technical specifications and architecture documents, creating good documentation, managing a project
+            timeline.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-snowflake-o fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Creativity and innovation</h4>
+          <p class="text-muted">We tend to think of an innovation as a new product but you can innovate with a new process, method, business model,
+            partnership, route to market or marketing method. Indeed every aspect of your business operation is a candidate
+            for innovation. I believe these features are important to the manager but more important to a full-stack developer.
+            I have a high motivation to learn and explore ideas, processes and people
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Portfolio</h2>
+          <h3 class="section-subheading text-muted">My lateast work</h3>
+        </div>
+      </div>
+      <div id="proj-portfolio" class="row">
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Me -->
+  <section class="bg-light" id="me" style="padding: 0px;">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/team/NuritPic.jpg" alt="">
+          <h4>Nurit Levi</h4>
+          <p class="text-muted">Industrial Engineer,</br> Full Stack Developer</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/search/top/?q=nurit%20levi%20hevroni">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/nurit-levi-hevroni-0308392b/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-8 flex-align-center">
+        <div class="large text-muted  about-description">
+          <h3>Personal Information</h3>
+          <p>Currently I live in the center of Tel Aviv and originally from Zichron Yaakov. 31 years old and youngest daughter
+            of four sisters. I love to do sports: yoga Bikram, and running in the park, go dancing with friends and just
+            hangout at home with my family.
+          </p>
+          <h3>Education</h3>
+          <ul>
+            <li>Bachelor of Science – BS, Industrial Engineering, Major in Information Systems.</li>
+            <li>Student at Coding Academy Bootcamp</li>
+          </ul>
+          <h3>Experrience</h3>
+          <ul>
+            <li>2015 - Today : Supply Chain Control Manager at Mellanox Technologies - Israel</li>
+            <li>2014 -2015 : Website development and advertising campaigns at DolphinSoft</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 flex-align-center">
+          <a href="http://coding-academy.org" target="_blank">
+            <img src="./img/ca-logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 flex-align-center">
+          <ul class="list-inline social-buttons flex-align-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item flex-align-center">
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 flex-align-center">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">More Me</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Even More</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolio-Modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2></h2>
+                <p class="item-intro text-muted p-title"></p>
+                <img class="img-fluid d-block mx-auto" src="">
+                <img class="modal-proj-pic" src="">
+                <p class="desc"></p>
+                <ul class="list-inline">
+                  <li class="Createdate"></li>
+                  <li class="labels-use"></li>
+                  <li class="open Project">
+                    <a class="proj-link" href="">go to project</a>
+                  </li>
+
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/utils.js"></script>
+  <script src="js/ca-gallery.js"></script>
+  <script src="js/offCanvas.js"></script>
+  <script src="js/projs-service.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

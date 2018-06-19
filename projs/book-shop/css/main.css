@@ -1,0 +1,20 @@
+.table-header {
+  cursor: pointer;
+}
+.table-img {
+  height: 50px;
+}
+
+.modal-body-img {
+  float: left;
+  padding-left: 30px;
+}
+
+.modal-body-details {
+  font-size: 40px;
+  text-align: center;
+}
+
+.btn-rate {
+  cursor: pointer;
+}

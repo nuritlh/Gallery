@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>in-picture</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/cat.PNG">
+
+</head>
+
+<body onload="init()">
+    <div>
+        <div class="text-title">Pick the sentence that describes the picture:</div>
+        <br>
+        <div>
+            <img class="quest-picture" src="">
+        </div>
+    </div>
+    <br>
+    <div class="answers">
+
+    </div>
+    <div>
+        <br>
+        <button class="myButton playAgainbtn" onclick="playAgain()">Play Again</button>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Good Work!</h2>
+            </div>
+            <div class="modal-body">
+                <p id="alertText"></p>
+            </div>
+        </div>
+
+    </div>
+    <script src=js/main.js></script>
+</body>
+
+
+
+</html>
