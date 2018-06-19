@@ -25,7 +25,9 @@ $(document).ready(function() {
     var strDate = day + '-' + month + '-' + year;
     modal.find('.modal-body .Createdate').text('Create Date: ' + strDate);
     modal.find('.modal-body .labels-use').text(proj.labels);
-    modal.find('.modal-body .proj-link').attr('href', './projs/' + proj.name);
+    modal
+      .find('.modal-body .proj-link')
+      .attr('href', './projs/' + proj.name + '/index.html');
     modal
       .find('.modal-body .img-fluid')
       .attr('src', 'img/portfolio/' + proj.name + '.PNG');
